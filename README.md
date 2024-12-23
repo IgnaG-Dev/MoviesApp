@@ -1,79 +1,77 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# MoviesApp 🎬
 
-# Getting Started
+MoviesApp es una aplicación móvil desarrollada con React Native y TypeScript que permite a los usuarios explorar y descubrir películas populares, ver detalles de cada película y buscar sus títulos favoritos.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+![Captura de MoviesApp](https://github.com/user-attachments/assets/a43265c6-7429-452f-8bd3-32b8be8bac6c "Interfaz de MoviesApp")
 
-## Step 1: Start the Metro Server
+## Funcionalidades principales 🌟
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- **Explorar Películas Populares**: Navega por una lista actualizada de las películas más populares del momento.
+- **Detalles de Películas**: Accede a información detallada sobre cada película, incluyendo sinopsis, calificación y fecha de lanzamiento.
+- **Navegación Intuitiva**: Interfaz de usuario amigable con navegación mediante Stack y Tabs para una experiencia fluida.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Tecnologías Utilizadas 🛠️
 
-```bash
-# using npm
-npm start
+- **React Native**: Framework para construir aplicaciones móviles nativas.
+- **TypeScript**: Superset de JavaScript que añade tipado estático para mejorar la mantenibilidad del código.
+- **React Navigation**: Librería para manejar la navegación de forma flexible.
+- **Axios**: Cliente HTTP para realizar solicitudes a la API de The Movie Database (TMDB).
 
-# OR using Yarn
-yarn start
-```
+## Características de Desarrollo 📐
 
-## Step 2: Start your Application
+En el desarrollo de MoviesApp, se implementaron los siguientes elementos clave para garantizar una arquitectura robusta y escalable:
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+- **Patrones de diseño**: Uso de patrones como separación de capas (UI, lógica de negocio y datos) para facilitar la mantenibilidad.
+- **Navegación entre pantallas**: Configuración de navegación fluida utilizando React Navigation.
+- **Configuración de API Key de TheMovieDB**: Configuración segura y modular para integrar la API de TMDB.
+- **Mappers**: Transformación de datos de la API al modelo interno de la aplicación.
+- **Entidades**: Definición clara de modelos y tipos mediante TypeScript para representar los datos de forma consistente.
 
-### For Android
 
-```bash
-# using npm
-npm run android
+## Configuración del Proyecto ⚙️
 
-# OR using Yarn
-yarn android
-```
+> **Nota:** Asegúrate de tener Node.js, npm o yarn, y un entorno configurado para React Native CLI.
 
-### For iOS
+1. Clona este repositorio en tu máquina local:
+   ```bash
+   git clone https://github.com/IgnaG-Dev/MoviesApp
+   ```
 
-```bash
-# using npm
-npm run ios
+2. Navega al directorio del proyecto:
+   ```bash
+   cd MoviesApp
+   ```
 
-# OR using Yarn
-yarn ios
-```
+3. Instala las dependencias necesarias:
+   ```bash
+   npm install
+   ```
+   o
+   ```bash
+   yarn install
+   ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+4. Configura las variables de entorno:
+   - Crea un archivo `.env` en la raíz del proyecto y añade tu clave de API para el servicio de The Movie Database (TMDB):
+     ```
+     THE_MOVIE_DB_KEY=tu_clave_de_api
+     ```
+   - Para obtener una clave de API, regístrate en [The Movie Database](https://www.themoviedb.org/) y sigue las instrucciones para generar una.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+5. Ejecuta la aplicación en un emulador o dispositivo físico:
+   - Para Android:
+     ```bash
+     npx react-native run-android
+     ```
+   - Para iOS:
+     ```bash
+     npx react-native run-ios
+     ```
 
-## Step 3: Modifying your App
+## Contribución 🤝
 
-Now that you have successfully run the app, let's modify it.
+¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar esta aplicación, abre un issue o envía una pull request con tus propuestas.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+## Contacto 📧
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto.
