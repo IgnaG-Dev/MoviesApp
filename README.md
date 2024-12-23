@@ -1,6 +1,6 @@
 # MoviesApp 🎬
 
-MoviesApp es una aplicación móvil desarrollada con React Native y TypeScript que permite a los usuarios explorar y descubrir películas populares, ver detalles de cada película y buscar sus títulos favoritos.
+MoviesApp es una aplicación móvil desarrollada con React Native y TypeScript que permite a los usuarios explorar, descubrir películas populares y ver detalles de cada película.
 
 ![Captura de MoviesApp](https://github.com/user-attachments/assets/a43265c6-7429-452f-8bd3-32b8be8bac6c "Interfaz de MoviesApp")
 
